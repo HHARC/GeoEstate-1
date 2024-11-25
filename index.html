@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoEstate Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <link rel="stylesheet" href="../assests/css/styles.css">
+</head>
+
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+      <div class="container">
+        <a id="home" class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./assests/img/logo.png" alt="GeoEstate Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mx-5 me-5">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#price">Price</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#company">Company</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center">
+            <a href="./pages/signin.html"
+              class="text-decoration-none btn btn-outline-dark rounded-pill  btn-access me-2 px-3 py-2">Login</a>
+            <a href="./pages/signup.html" class="btn btn-outline-success btn-record me-2 rounded-pill px-3 py-2">Sign Up</a>
+          </div>
+
+          <div class="dropdown me-2 mt-1">
+            <button class="btn btn-outline-success dropdown-toggle rounded-pill px-3 py-2" type="button"
+              id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Select Language
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="French"> French
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="German"> German
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h1 data-aos="fade-right" data-aos-duration="1000">The real estate tool that will make you take off</h1>
+          <p data-aos="fade-right" data-aos-duration="1000">
+            Discover real estate properties from national and international portals under a single application
+            Geoestate, the best application for property acquisition and valuation.
+          </p>
+          <a class="btn btn-cta" href="#">REQUEST A DEMO</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper Slidder  -->
+  <section>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./assests/img/simg2.jpg" alt="Image 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assests/img/simg1.jpg" alt="Image 2">
+        </div>
+        <div class="swiper-slide">
+          <img class="pisos" src="./assests/img/simg3.jpg" alt="Image 3">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assests/img/simg2.jpg" alt="Image 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assests/img/simg1.jpg" alt="Image 2">
+        </div>
+        <div class="swiper-slide">
+          <img class="pisos" src="./assests/img/simg3.jpg" alt="Image 3">
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3, // Default to 3 images at a time
+        spaceBetween: 20, // Space between slides
+        loop: true, // Infinite loop mode
+        autoplay: {
+          delay: 2500, // Delay between slides (ms)
+          disableOnInteraction: false, // Keep autoplay running even after interaction
+        },
+        grabCursor: true, // Enable cursor dragging
+        breakpoints: {
+          320: {
+            slidesPerView: 2, // 2 slides for mobile devices
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3, // 3 slides for tablets
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3, // 3 slides for larger screens (desktop)
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </section>
+  <!-- Third Section  -->
+  <section class="bg-img">
+    <div class="container content">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="title" data-aos="fade-right" data-aos-duration="1000">
+            Discover properties from multiple portals, geolocated and personalized for you
+          </h1>
+          <p class="subtitle" data-aos="fade-right" data-aos-duration="1000">
+            All in one dynamic and easy-to-use platform even while you're on the go.
+            <br />
+            Geoestate is definitely your property acquisition and valuation tool
+          </p>
+          <div class="agents" data-aos="fade-right" data-aos-duration="1000">
+            <img alt="Agent 1" height="40"
+              src="https://storage.googleapis.com/a1aa/image/jov1tu0eD8UyAiRvBwZiDtOFTecD5fxjjPF89Gq6MopPnUknA.jpg"
+              width="40" />
+            <img alt="Agent 2" height="40"
+              src="https://storage.googleapis.com/a1aa/image/Ntqx27l8AxbTBh45xTt4FJ0d1yeniIVsTHciU5Zl3MK1JF5JA.jpg"
+              width="40" />
+            <img alt="Agent 3" height="40"
+              src="https://storage.googleapis.com/a1aa/image/nYULLgOmBTZPP5g4VgBMwQAvHr1hZM6yf9weEfPHCrzQnUknA.jpg"
+              width="40" />
+            <span>More than 2,000 agents have used it</span>
+          </div>
+          <button class="offer-btn" data-aos="fade-right" data-aos-duration="1000">
+            <a class="text-decoration-none text-white" href="./signin.html"> Launch offer at 30%</a>
+          </button>
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+          <img src="./assests/img/col-img.png" alt="" class="img-fluid col-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4th Section  -->
+  <section id="company">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-aos="fade-right" data-aos-duration="1000">The complete solution for the real estate market</h2>
+        <p data-aos="fade-left" data-aos-duration="1000">We make it easy for users to use our platform, which is why we offer this benefit.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="feature-box" data-aos="fade-right" data-aos-duration="1000">
+            <i class="fas fa-home"></i>
+            <h4>Integration with Multiple Portals</h4>
+            <p>Access the most complete international and national portfolio of properties from Idealista, Fotocasa,
+              LuxuryEstate, and more, in one place.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="feature-box" data-aos="fade-left" data-aos-duration="1000">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Advanced Geolocation</h4>
+            <p>Explore properties directly on the map and activate the ones you're interested in to easily find them
+              while you're on the go.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="feature-box" data-aos="fade-right" data-aos-duration="1000">
+            <i class="fas fa-sync-alt"></i>
+            <h4>Dynamic Interface</h4>
+            <p>Enjoy a fluid user experience with an intuitive and adaptable interface that will allow you to easily
+              capture and evaluate properties.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="feature-box" data-aos="fade-left" data-aos-duration="1000">
+            <i class="fas fa-bell"></i>
+            <h4>Custom Alerts</h4>
+            <p>Receive instant notifications when new properties appear that match your preferences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 5th Section  -->
+  <section style="background-color: #33DB4A26;" id="price">
+    <div class="container p-5">
+      <div class="pricing-header">
+        <h1 data-aos="fade-right" data-aos-duration="1000">Choose the best option for you</h1>
+        <p data-aos="fade-left" data-aos-duration="1000">Choose the no-commitment rate that best suits your needs</p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card-header">
+              <h2>Basic User</h2>
+              <div class="price">80€<span>/month</span></div>
+              <p>( For One User )</p>
+              <p>Offer during the first 1 months</p>
+            </div>
+            <div class="card-body">
+              <button class="btn btn-choose">
+                <a class="text-white text-decoration-none" href="./payment.html"> Choose Plan</a>
+              </button>
+              <ul>
+                <li><i class="fas fa-check"></i>Access to a limited database</li>
+                <li><i class="fas fa-check"></i>No advanced geolocation
+                </li>
+                <li><i class="fas fa-check"></i>No buyer management
+                </li>
+                <li><i class="fas fa-check"></i>Cannot mark the map with colors
+                </li>
+                <li><i class="fas fa-check"></i>Cannot create buyer profiles
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card highlight" data-aos="fade-down" data-aos-duration="1000">
+            <div class="card-header">
+              <h2>Standard</h2>
+              <div class="price">150€<span>/month</span></div>
+              <p>( For Upto Five User )</p>
+              <p>Offer during the first 2 months</p>
+            </div>
+            <div class="card-body">
+              <button class="btn btn-choose"><a class="text-success text-decoration-none" href="./payment.html">Choose
+                  Plan</a></button>
+              <ul>
+                <li class="text-white"><i class="fas fa-check text-success bg-white"></i>Real-time geolocation
+                </li>
+                <li class="text-white"><i class="fas fa-check text-success bg-white"></i>Unlimited buyer profiles
+                </li>
+                <li class="text-white"><i class="fas fa-check text-success bg-white"></i>Custom alerts
+                </li>
+                <li class="text-white"><i class="fas fa-check text-success bg-white"></i>Automatic exposé sending</li>
+                <li class="text-white"><i class="fas fa-check text-success bg-white"></i>Limited to one province
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card" data-aos="fade-left" data-aos-duration="1000">
+            <div class="card-header">
+              <h2>Master</h2>
+              <div class="price">300€<span>/month</span></div>
+              <p>( For Upto Ten Users )</p>
+              <p>Offer during the first 3 months</p>
+            </div>
+            <div class="card-body">
+              <button class="btn btn-choose"><a class="text-white text-decoration-none" href="./payment.html">
+                  Choose Plan</a></button>
+              <ul>
+                <li><i class="fas fa-check"></i>Full access to all provinces
+                </li>
+                <li><i class="fas fa-check"></i>Unlimited profiles
+                </li>
+                <li><i class="fas fa-check"></i>Enhanced control over property </li>
+                <li><i class="fas fa-check"></i>Ability to create 1 administrator profile
+                </li>
+                <li><i class="fas fa-check"></i>Ability to create 4 agent profiles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Blog  -->
+
+  <section id="blog" style="background-color: rgb(219, 222, 222);" class="pt-5 pb-5">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="mb-4 mt-3" data-aos="fade-right" data-aos-duration="1000">Blog & Article</h1>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm" data-aos="fade-right" data-aos-duration="1000">
+            <img src="./assests/img/blog1.jpg" alt="images" class="card-img-top blog-img">
+            <div class="card-body lh-lg">
+              <h5 class="card-text">GeoEstate: Simplify Property Acquisition with the Largest Centralized Database</h5>
+              <a class="text-success text-decoration-none fw-bold" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm" data-aos="fade-down" data-aos-duration="1000">
+            <img src="./assests/img/blog2.jpg" class="card-img-top blog-img" alt="images">
+            <div class="card-body lh-lg">
+              <h5 class="card-text">Discover Mallorca</h5>
+              <a class="text-success text-decoration-none fw-bold" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm" data-aos="fade-left" data-aos-duration="1000">
+            <img src="./assests/img/blog3.jpg" class="card-img-top blog-img" alt="images">
+            <div class="card-body lh-lg">
+              <h5 class="card-text">Why Invest in Luxury Hotels in Mallorca?</h5>
+              <a class="text-success text-decoration-none fw-bold" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Testimonial  -->
+  <section style=" background-color: #cac8c8; ">
+    <h2 class="text-center pt-5 fw-bold" data-aos="fade-right" data-aos-duration="1000">Testimonial</h2>
+    <div id="testimonial-swiper" class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="testimonial-image" src="./assests/img/testimonial1.png" alt="Client 1" />
+          <div class="testimonial-text">
+            Geostation, under the leadership of CEO Sanan Succie, has brought unmatched efficiency and insight to the
+            real estate process. The innovative tools and support provided made my experience seamless and well-informed
+          </div>
+          <div class="testimonial-author">Alex Marquez</div>
+          <div class="testimonial-role">Founder of Agency Partner</div>
+        </div>
+        <div class="swiper-slide">
+          <img class="testimonial-image" src="./assests/img/testimonial2.png" alt="Client 2" />
+          <div class="testimonial-text">
+            Geostation has transformed the way I work as a real estate agent, providing accurate property data and
+            streamlined processes. Sanan Succie’s leadership ensures top-notch support and innovative tools. It’s a
+            must-have for any real estate professional. </div>
+          <div class="testimonial-author">Jane Smith</div>
+          <div class="testimonial-role">Real Estate Agent </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="testimonial-image" src="./assests/img/testimonial3.png" alt="Client 3" />
+          <div class="testimonial-text">
+            "I had a wonderful time working with this company. They truly exceeded my expectations!"
+          </div>
+          <div class="testimonial-author">Mark Johnson</div>
+          <div class="testimonial-role">Product Manager, Code Sinc Solutions</div>
+        </div>
+        <div class="swiper-slide">
+          <img class="testimonial-image" src="./assests/img/testimonial1.png" alt="Client 1" />
+          <div class="testimonial-text">
+            Geostation, under the leadership of CEO Sanan Succie, has brought unmatched efficiency and insight to the
+            real estate process. The innovative tools and support provided made my experience seamless and well-informed
+          </div>
+          <div class="testimonial-author">Alex Marquez</div>
+          <div class="testimonial-role">Founder of Agency Partner</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper("#testimonial-swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: false,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+
+        },
+        autoplay: {
+          delay: 2000, // Time in milliseconds (2 seconds)
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: "#testimonial-swiper .swiper-pagination",
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+  </section>
+  <!-- FAQs  -->
+  <section class="FAQ pt-5 pb-5">
+    <div class="container">
+      <h1 class="faq-title" data-aos="fade-right" data-aos-duration="1000">FAQs</h1>
+      <div class="row">
+        <!-- First Column -->
+        <div class="col-md-6">
+          <div class="accordion" id="faqColumn1" data-aos="fade-right" data-aos-duration="1000">
+            <!-- Question 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  What is GeoEstate and how does it work?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                data-bs-parent="#faqColumn1">
+                <div class="accordion-body">
+                  GeoEstate is an app that brings together properties from multiple real estate portals
+                  such as Idealista, Fotocasa, and LuxuryEstate into a single platform. With GeoEstate,
+                  you can search for properties using a dynamic interface, receive personalized alerts,
+                  and view geolocated properties on a map.
+                </div>
+              </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Does GeoEstate include international properties?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqColumn1">
+                <div class="accordion-body">
+                  Yes, GeoEstate allows you to access international properties from portals such as
+                  LuxuryEstate, ThinkSpain and Keyro, as well as local portals such as Idealista and
+                  Fotocasa. This allows you to search for properties in different markets from a single
+                  platform.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3. How does geolocation work in GeoEstate?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqColumn1">
+                <div class="accordion-body">
+                  Geolocation in GeoEstate allows you to view properties directly on a map, helping you
+                  locate them precisely. You can even activate properties on the map and use them as a
+                  guide as you move around to find them in person.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingfour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                  Can I customize property alerts in GeoEstate?
+                </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqColumn1">
+                <div class="accordion-body">
+                  Yes, GeoEstate offers custom alerts that notify you when new properties matching your
+                  search criteria are listed
+                  . You can tailor alerts based on your location preferences,
+                  property type, price, and more.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingfive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                  Is GeoEstate better than Betterplace or Casafari?
+                </button>
+              </h2>
+              <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqColumn1">
+                <div class="accordion-body">
+                  GeoEstate offers several advantages over Betterplace and Casafari, such as broader
+                  integration with international portals, advanced geolocation features, and the ability
+                  to manage buyer profiles to view personalized properties on the map.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Column -->
+        <div class="col-md-6">
+          <div class="accordion" id="faqColumn2" data-aos="fade-left" data-aos-duration="1000">
+            <!-- Question 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  How can I create a buyer profile on GeoEstate?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#faqColumn2">
+                <div class="accordion-body">
+                  Creating a buyer profile on GeoEstate is easy. Simply enter your search preferences,
+                  and the app will show you only the properties that fit your needs. You'll also receive
+                  personalized alerts when new properties matching your profile are added.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Does GeoEstate offer a free trial?
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#faqColumn2">
+                <div class="accordion-body">
+                  Yes, GeoEstate offers a 14-day free trial on any of its subscription plans. During this
+                  period, you can explore all the features and decide if it is the right platform for you
+                  without
+                  any commitment.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingeight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                  Does GeoEstate allow generating PDF exposés for buyers?
+                </button>
+              </h2>
+              <div id="collapseeight" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#faqColumn2">
+                <div class="accordion-body">
+                  Yes, GeoEstate allows Professional and Premium plan users to generate PDF exposés to
+                  share with interested buyers. This makes it easier to present properties in a
+                  professional manner.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingnine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+                  Is GeoEstate available on mobile devices?
+                </button>
+              </h2>
+              <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#faqColumn2">
+                <div class="accordion-body">
+                  Yes, GeoEstate is available for iOS and Android mobile devices. You can download the app
+                  from Google Play or App Store and access all the features from your smartphone.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingten">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
+                  Can I change plans at any time?
+                </button>
+              </h2>
+              <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#faqColumn2">
+                <div class="accordion-body">
+                  Yes, you can change or cancel your subscription at any time from your account.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact  -->
+   <div class="parent-contact">
+  
+
+<section id="contact" class="Geo-State-Contact-section my-5 container-fluid">
+  <h1 class="text-center Geo-State-Contact-hero-h1" data-aos="fade-right" data-aos-duration="1000">
+    Contact Us
+</h1>
+    <div class="row p-4">
+        <div class="col-md-6 pe-md-4" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="fs-4 fw-semibold text-secondary Geo-State-Contact-h2">Contact Us</h2>
+            <p class="text-muted mt-2 w-75">
+                If you're interested in our real estate software, send a message through the form, and one of our sales agents will get in touch with you.
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <form class="row g-3" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-12">
+                    <label for="name" class="form-label text-secondary Geo-State-Contact-label">Name</label>
+                    <input type="text" class="form-control Geo-State-Contact-form-control" id="name" placeholder="Name">
+                </div>
+
+                <div class="col-12">
+                    <label for="email" class="form-label text-secondary Geo-State-Contact-label">Email</label>
+                    <input type="email" class="form-control Geo-State-Contact-form-control" id="email" placeholder="Email">
+                </div>
+
+                <div class="col-12">
+                    <label for="phone" class="form-label text-secondary Geo-State-Contact-label">Phone</label>
+                    <input type="tel" class="form-control Geo-State-Contact-form-control" id="phone" placeholder="Phone">
+                </div>
+
+                <div class="col-12">
+                    <label for="message" class="form-label text-secondary Geo-State-Contact-label">Message</label>
+                    <textarea class="form-control Geo-State-Contact-form-control" id="message" rows="3" placeholder="Message"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <label for="security" class="form-label text-secondary Geo-State-Contact-label">Security: What is 2+3?</label>
+                    <input type="text" class="form-control Geo-State-Contact-form-control" id="security" placeholder="Answer">
+                </div>
+
+                <div class="col-12 d-flex align-items-center">
+                    <input type="checkbox" class="form-check-input me-2" id="privacy">
+                    <label for="privacy" class="form-check-label text-muted">
+                        I have read and accept the site's privacy policies
+                    </label>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary border-0 Geo-State-Contact-btn-form-contact w-100 h-100 rounded-5">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+</div>
+  <!-- Footer   -->
+  <footer class="footer-section ">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="widget company-intro-widget">
+              <a href="index.html" class="site-logo"><img src="./assests/img/logo.png" alt="logo"></a>
+              <a href="#"></a>
+              <ul class="company-footer-contact-list d-flex">
+                <!-- <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> -->
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                
+              </ul>
+            </div>
+          </div><!-- widget end -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="widget course-links-widget">
+              <h5 class="widget-title">Services</h5>
+              <ul class="courses-link-list">
+                <li><a  href="#home">Home</a></li>
+                <li><a  href="#price">Price</a></li>
+                <li><a href="#company">Company</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+              </ul>
+            </div>
+          </div><!-- widget end -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="widget latest-news-widget">
+              <h5 class="widget-title">Get In Touch</h5>
+              <ul class="small-post-list">
+                <li>
+                  <div class="small-post-item d-flex flex-column border-bottom py-2">
+                    <a href="#" class="post-date"><i class="fa-solid fa-phone"></i> +34 666 22 7723
+                    </a>
+                    <a href="#" class="post-date"><i class="fa-solid fa-envelope"></i> lilian.periodista@gmail.com</a>
+                  </div>
+                </li><!-- small-post-item end -->
+                <li>
+                  <div class="small-post-item d-flex flex-column">
+                    <a href="#" class="post-date"><i class="fa-solid fa-location-dot"></i> Josep Pla, <br> &nbsp;&nbsp; 13 mezzanine 108304, Mataró</a>
+                  </div>
+                </li><!-- small-post-item end -->
+              </ul>
+            </div>
+          </div><!-- widget end -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="widget newsletter-widget">
+              <h5 class="widget-title">Newsletter</h5>
+              <div class="footer-newsletter">
+               
+                <form class="news-letter-form d-flex">
+                  <input type="email" name="news-email" class="h-100" id="news-email" placeholder="Your email address">
+                  <input class="h-100" type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div><!-- widget end -->
+        </div>
+      </div> 
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-sm-left text-center">
+              <span class="copy-right-text">© 2024 <a href="https://codepen.io/anupkumar92">GeoSate</a> All Rights Reserved <a href="https://codes-inc.com/" class="text-decoration-none text-warning">Codesinc.</a> </span>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <ul class="terms-privacy d-flex justify-content-sm-end justify-content-center">
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div><!-- footer-bottom end -->
+  </footer>
+
+
+
+
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init(); // Initialize AOS
+</script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
